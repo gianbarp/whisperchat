@@ -1,0 +1,20 @@
+doctype 5
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    title Whisper Chat - #{title}
+    block scripts
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+      script(src='/js/chat.js')
+      script(src='/socket.io/socket.io.js')
+  body
+    h1 Whisper Chat - #{title}
+    H2 This is just a test implementing Node.js, socket.io and Stylus
+    #container
+      block content
+
+    block foot
+      #footer
+        p (L) David Vartanián <
+          a(href="mailto:davidvartanian@gmail.com") davidvartanian@gmail.com
+          >
